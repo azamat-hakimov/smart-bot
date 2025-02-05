@@ -53,7 +53,7 @@ public class Bot extends TelegramLongPollingBot {
         sendMessage.setChatId(chatId);
 
         if (text.equals("/start")){
-            sendMessage.setText("Hey there, " + getBotUsername() + " here! 👋\nReady to chat? Ask me anything! 😊");
+            sendMessage.setText("Hey there! I'm here and ready to chat. Feel free to ask me anything!");
         }else {
             // chat with Ai
             ApiManager ai = new ApiManager(accessKey, baseUrl);
